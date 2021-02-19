@@ -10,7 +10,7 @@ class App extends Component {
     givenTasks: [],
     givenDeadlines: [],
     finishedTasks: [],
-    archiveStatus: false,
+    finishedStatus: false,
     time: new Date()
   }
 
@@ -46,6 +46,7 @@ class App extends Component {
       addDeadline: ""
     })
   }
+
 
   /*create a finished tasks area ---- not working yet*/  
   showFinishedHandler = () => {
@@ -146,7 +147,6 @@ class App extends Component {
         <div className="clock">
             {time.toLocaleString()}
         </div>
-
       </div>
   )}
 }
