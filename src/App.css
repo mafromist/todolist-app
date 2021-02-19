@@ -1,38 +1,163 @@
+body {
+  background-color: #F4D03F;
+  background-image: linear-gradient(132deg, #993ff4 0%, #a01662 100%);
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .App {
-  text-align: center;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.upCont {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.clock {
+  width: 40vw;
+  height: 10vh;
+  background-color: white;
+  border: 4px solid purple;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+  color: rgb(97, 26, 97);
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.appCont {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 55vh;
+  width: 35vw;
+  background-color: white;
+  border: 4px solid purple;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.appInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.titleArea, .addedTasksArea h1, .finishedArea h2 {
+  width: 100%;
+  text-transform: lowercase;
+  text-align: center;
+  text-shadow: #a01662 -2px 2px 8px;
+  color: #a01662;
+  margin-bottom: 4%;
 }
+
+.finishedArea {
+  display: none;
+}
+
+.inputArea {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4%;
+}
+
+.inputArea label {
+  color: #a01662;
+  text-transform: lowercase;
+  font-weight: 600;
+}
+
+.input {
+  height: 5vh;
+  border: 4px solid purple;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+
+.input::placeholder {
+  color: #a01662;
+  text-transform: lowercase;
+  font-weight: 600;
+}
+
+.saveBtn{
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 4px solid purple;
+  border-radius: 5px;
+  color: #a01662;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: lowercase;
+  margin-left: 5%;
+}
+
+
+.taskArea{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 55vh;
+  width: 40vw;
+  background-color: white;
+  border: 4px solid purple;
+  border-radius: 20px;
+}
+
+.addedTasksArea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.addedTaskArea {
+  width: 100%;
+  display: flex;
+}
+
+.givenTasks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 35vw;
+  list-style: none;
+  color: #112760;
+  font-size: 0.9em;
+  font-weight: 800;
+}
+
+.deadlineTitle {
+  color: purple;
+  font-style: oblique;
+  font-size: 0.8em;
+}
+
+.doneBtn {
+  background-color: transparent;
+  border: none;
+  color: green;
+  font-weight: 600;
+  margin-left: 3%;
+}
+
+.deleteBtn {
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-weight: 600;
+}
+
